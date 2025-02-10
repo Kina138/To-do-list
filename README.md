@@ -5,6 +5,38 @@ This project is my implementation of the **ToDo List App** for the **PE03 Assign
 
 ---
 
+## 📥 Input  
+The application receives user input through a **text input field**, where users can enter a task description.  
+- The user types a task into the input field.  
+- Clicking the **"Add Task"** button submits the task.  
+- Users can also interact with the **"Delete"** button to remove tasks from the list.  
+
+---
+
+## ⚙️ Process  
+Once a task is entered and submitted, the following processes occur:  
+1. **State Management:**  
+   - The application maintains a list of tasks using React’s `useState` hook.  
+   - The new task is added to the **state array** when the "Add Task" button is clicked.  
+2. **Dynamic Rendering:**  
+   - The `.map()` function iterates over the list of tasks and dynamically displays them.  
+3. **Task Deletion:**  
+   - When a user clicks **"Delete"**, the corresponding task is removed from the state.  
+4. **Component Interaction:**  
+   - `App.js` manages the state and passes data to `TodoList.js`, which further renders each task using `TodoItem.js`.  
+
+---
+
+## 📤 Output  
+The application produces the following output:  
+- A **real-time updated ToDo list**, where users can see their added tasks.  
+- Clicking **"Add Task"** results in an immediate update to the displayed list.  
+- Clicking **"Delete"** removes a task dynamically without needing a page refresh.  
+
+This **interactive** and **user-friendly** interface ensures efficient task management, enhancing user experience through real-time updates and a clean UI.  
+
+---
+
 ## 🎯 Learning Outcomes & Achievements  
 By working on this project, I have successfully:  
 - Developed a fully functional **ToDo list application** using **React.js**.  
